@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <ul class="nav-links" id="menuList">
+        <li><a href="index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about" class="active">About</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+      </ul>
+      <button 
+        class="nav-toggle" 
+        id="menu-toggle" 
+        aria-expanded="false" 
+        aria-controls="menuList"
+        aria-label="Toggle navigation">☰
+      </button>
+    </div>
+  </nav>
+
+  <main data-testid="test-about-page" class="about-main">
+    <div class="about-card">
+      <h1>About Me</h1>
+
+      <section data-testid="test-about-bio">
+        <h2>My Bio</h2>
+        <p>
+          I’m Mariam Abiodun, a passionate Frontend Developer focused on building accessible, user-centered web experiences. 
+          I enjoy solving problems through clean and elegant interfaces.
+        </p>
+      </section>
+
+      <section data-testid="test-about-goals">
+        <h2>My Goals in this Program</h2>
+        <ul>
+          <li>Improve my problem-solving and JavaScript skills</li>
+          <li>Master React and build real-world projects</li>
+          <li>Collaborate effectively within a tech team</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-about-confidence">
+        <h2>Areas of Low Confidence</h2>
+        <p>
+          I sometimes doubt my ability to explain technical concepts clearly, and I’m still working on getting comfortable 
+          with algorithms and data structures.
+        </p>
+      </section>
+
+      <section data-testid="test-about-future-note">
+        <h2>Note to My Future Self</h2>
+        <p>
+          Keep learning, stay consistent, and never forget how far you’ve come. Every line of code brings you closer to your dreams.
+        </p>
+      </section>
+
+      <section data-testid="test-about-extra">
+        <h2>Extra Thoughts</h2>
+        <p>
+          I’m grateful for opportunities like this HNG Internship that challenge me to grow and connect with like-minded developers.
+        </p>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
