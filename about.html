@@ -25,19 +25,21 @@
   </nav>
 
   <main data-testid="test-about-page" class="about-main">
-    <div class="about-card">
-      <h1>About Me</h1>
+    <article class="about-card" data-testid="test-about-card">
+      <header data-testid="test-about-header">
+        <h1>About Me</h1>
+      </header>
 
-      <section data-testid="test-about-bio">
-        <h2>My Bio</h2>
+      <section data-testid="test-about-bio" aria-labelledby="bio-title">
+        <h2 id="bio-title">My Bio</h2>
         <p>
           I’m Mariam Abiodun, a passionate Frontend Developer focused on building accessible, user-centered web experiences. 
           I enjoy solving problems through clean and elegant interfaces.
         </p>
       </section>
 
-      <section data-testid="test-about-goals">
-        <h2>My Goals in this Program</h2>
+      <section data-testid="test-about-goals" aria-labelledby="goals-title">
+        <h2 id="goals-title">My Goals in this Program</h2>
         <ul>
           <li>Improve my problem-solving and JavaScript skills</li>
           <li>Master React and build real-world projects</li>
@@ -45,29 +47,30 @@
         </ul>
       </section>
 
-      <section data-testid="test-about-confidence">
-        <h2>Areas of Low Confidence</h2>
+      <section data-testid="test-about-confidence" aria-labelledby="confidence-title">
+        <h2 id="confidence-title">Areas of Low Confidence</h2>
         <p>
           I sometimes doubt my ability to explain technical concepts clearly, and I’m still working on getting comfortable 
           with algorithms and data structures.
         </p>
       </section>
 
-      <section data-testid="test-about-future-note">
-        <h2>Note to My Future Self</h2>
+      <section data-testid="test-about-future-note" aria-labelledby="future-title">
+        <h2 id="future-title">Note to My Future Self</h2>
         <p>
           Keep learning, stay consistent, and never forget how far you’ve come. Every line of code brings you closer to your dreams.
         </p>
       </section>
 
-      <section data-testid="test-about-extra">
-        <h2>Extra Thoughts</h2>
+      <section data-testid="test-about-extra" aria-labelledby="extra-title">
+        <h2 id="extra-title">Extra Thoughts</h2>
         <p>
           I’m grateful for opportunities like this HNG Internship that challenge me to grow and connect with like-minded developers.
         </p>
       </section>
-    </div>
+    </article>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
