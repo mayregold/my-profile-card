@@ -10,8 +10,8 @@
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-container">
       <ul class="nav-links" id="menuList">
-        <li><a href="index.html" data-testid="nav-home">Home</a></li>
-        <li><a href="about.html" data-testid="nav-about" class="active">About</a></li>
+        <li><a href="index.html" data-testid="nav-home" class="active">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
         <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
       </ul>
       <button 
@@ -23,41 +23,42 @@
       </button>
     </div>
   </nav>
+
   <main role="main">
-    <article class="profile-card" data-testid="profile-card">
-      <figure class="profile-image-wrapper" data-testid="profile-image-wrapper">
+    <article class="profile-card" data-testid="test-user-card">
+      <figure class="profile-image-wrapper" data-testid="test-user-image-wrapper">
         <img 
           src="./image/Mariam-image.jpeg" 
           alt="Portrait of Mariam Abiodun" 
           class="profile-image"
-          data-testid="profile-image"
+          data-testid="test-user-image"
         />
-        <figcaption class="image-caption" data-testid="image-caption">
+        <figcaption class="image-caption" data-testid="test-user-caption">
           Mariam Abiodun — Frontend Developer
         </figcaption>
       </figure>
 
       <div class="profile-content">
-        <header data-testid="profile-header">
-          <h1 class="profile-name" data-testid="profile-name">Mariam Abiodun</h1>
-          <p class="profile-role" data-testid="profile-role">Frontend Developer</p>
+        <header data-testid="test-user-header">
+          <h1 class="profile-name" data-testid="test-user-name">Mariam Abiodun</h1>
+          <p class="profile-role" data-testid="test-user-role">Frontend Developer</p>
         </header>
 
-        <p class="profile-bio" data-testid="profile-bio">
+        <p class="profile-bio" data-testid="test-user-bio">
           Passionate about creating accessible and user-friendly digital experiences. Always learning, always building.
         </p>
 
-        <p class="profile-time" data-testid="profile-time">
+        <p class="profile-time" data-testid="test-user-time">
           Current time: <span id="current-time"></span>
         </p>
 
-        <nav aria-label="Social Links" data-testid="social-links">
+        <nav aria-label="Social Links" data-testid="test-user-social-links">
           <ul class="social-list">
             <li>
               <a href="https://twitter.com" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 data-testid="link-twitter">
+                 data-testid="test-user-link-twitter">
                 Twitter
               </a>
             </li>
@@ -65,7 +66,7 @@
               <a href="https://linkedin.com" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 data-testid="link-linkedin">
+                 data-testid="test-user-link-linkedin">
                 LinkedIn
               </a>
             </li>
@@ -73,39 +74,40 @@
               <a href="https://github.com" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 data-testid="link-github">
+                 data-testid="test-user-link-github">
                 GitHub
               </a>
             </li>
           </ul>
         </nav>
 
-        <section aria-labelledby="hobby-title" data-testid="profile-hobbies">
+        <section aria-labelledby="hobby-title" data-testid="test-user-hobbies">
           <h2 id="hobby-title">Hobbies</h2>
           <ul class="hobby-list">
-            <li data-testid="hobby-1">Learning new skills</li>
-            <li data-testid="hobby-2">Cooking</li>
-            <li data-testid="hobby-3">Designing interfaces</li>
+            <li data-testid="test-user-hobby-1">Learning new skills</li>
+            <li data-testid="test-user-hobby-2">Cooking</li>
+            <li data-testid="test-user-hobby-3">Designing interfaces</li>
           </ul>
         </section>
 
-        <section aria-labelledby="dislike-title" data-testid="profile-dislikes">
+        <section aria-labelledby="dislike-title" data-testid="test-user-dislikes">
           <h2 id="dislike-title">Dislikes</h2>
           <ul class="dislike-list">
-            <li data-testid="dislike-1">Procrastination</li>
-            <li data-testid="dislike-2">Poor accessibility in design</li>
-            <li data-testid="dislike-3">Unclear documentation</li>
+            <li data-testid="test-user-dislike-1">Procrastination</li>
+            <li data-testid="test-user-dislike-2">Poor accessibility in design</li>
+            <li data-testid="test-user-dislike-3">Unclear documentation</li>
           </ul>
         </section>
 
-        <div class="profile-actions" data-testid="profile-actions">
-          <button class="profile-button" id="btn-follow" data-testid="btn-follow">Follow</button>
-          <button class="profile-button" id="btn-message" data-testid="btn-message">Message</button>
-          <button class="theme-toggle" id="themeToggle" data-testid="theme-toggle">Change Mode</button>
+        <div class="profile-actions" data-testid="test-user-actions">
+          <button class="profile-button" id="btn-follow" data-testid="test-user-btn-follow">Follow</button>
+          <button class="profile-button" id="btn-message" data-testid="test-user-btn-message">Message</button>
+          <button class="theme-toggle" id="themeToggle" data-testid="test-user-theme-toggle">Change Mode</button>
         </div>
       </div>
     </article>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
